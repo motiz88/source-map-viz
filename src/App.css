@@ -2,21 +2,73 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.TextContainer {
+  text-align: left;
+  font-family: Consolas, monospace;
+  white-space: pre;
+  border: 1px solid lightgray;
+  flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
+.CodeSpan-Unmapped {
+  color: grey;
+}
+
+.LineChunk {
+  /* border-right: 1px dotted blue; */
+}
+
+.CodeSpan-Filler {
+}
+
+.CodeSpan-Unmapped:hover {
+  background-color: lightgray;
+}
+
+.CodeSpan-Mapped:hover {
+  background-color: lightgreen;
+}
+
+.LineChunk,
+.CodeSpan-Filler,
+.CodeSpan-Mapped,
+.CodeSpan-Unmapped {
+  box-sizing: border-box;
+}
+
+.SplitArea {
+  display: flex;
+  flex-direction: row;
   min-height: 100vh;
+}
+
+.GeneratedArea {
+  min-height: 100vh;
+  flex: 1;
+}
+
+.InfoArea {
+  width: 50vw;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.MappingDetailView {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.MappingSourceContainer {
+  flex: 1;
+}
+
+.Line-Focused {
+  background-color: rgba(0,255,128, 0.2);
+}
+
+.CodeSpan-Focused {
+  background-color: lightgreen;
 }

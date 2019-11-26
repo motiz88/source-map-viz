@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.13",
+    "@types/react-cache": "^2.0.1",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-virtualized-auto-sizer": "^1.0.0",
+    "@types/react-window": "^1.8.1",
+    "dataloader": "^2.0.0",
+    "react": "^0.0.0-experimental-b53ea6ca0",
+    "react-cache": "^2.0.0-alpha.1",
+    "react-dom": "^0.0.0-experimental-b53ea6ca0",
+    "react-scripts": "3.2.0",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.8.5",
+    "source-map": "^0.8.0-beta.0",
+    "typescript": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8081"
 }
